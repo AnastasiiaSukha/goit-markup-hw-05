@@ -631,7 +631,7 @@ body {
   margin-left: calc(-1 * var(--portfolio-list-gap));
   margin-top: calc(-1 * var(--portfolio-list-gap));
 }
-.portfolio-card {
+.portfolio-card-link {
   display: block;
 }
 
@@ -677,6 +677,7 @@ body {
   transition: transform 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio-item:hover .portfolio-overflow-text {
+.portfolio-card-link:hover .portfolio-overflow-text,
+.portfolio-card-link:focus .portfolio-overflow-text {
   transform: translateY(0);
 }
